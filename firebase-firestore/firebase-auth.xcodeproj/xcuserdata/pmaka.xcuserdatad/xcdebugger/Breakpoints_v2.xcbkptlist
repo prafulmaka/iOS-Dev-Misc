@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "CE75E440-E6F7-437C-A8DE-89DF1073D3AF"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "37FB2869-E9B0-43DF-89FB-F19C6DD7B73F"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "firebase-auth/firebase_authApp.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "14"
+            endingLineNumber = "14"
+            landmarkName = "application(_:didFinishLaunchingWithOptions:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "37FB2869-E9B0-43DF-89FB-F19C6DD7B73F - e79ae79bd25d4a68"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "static firebase_auth.firebase_authApp.$main() -&gt; ()"
+                  moduleName = "firebase-auth"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/pmaka/Desktop/Projects/iOS-Dev-Misc/firebase-auth/firebase-auth/firebase_authApp.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "20"
+                  endingLineNumber = "20"
+                  offsetFromSymbolStart = "24">
+               </Location>
+               <Location
+                  uuid = "37FB2869-E9B0-43DF-89FB-F19C6DD7B73F - e79ae79bd25d4a09"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "static firebase_auth.firebase_authApp.$main() -&gt; ()"
+                  moduleName = "firebase-auth"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/pmaka/Desktop/Projects/iOS-Dev-Misc/firebase-auth/firebase-auth/firebase_authApp.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "19"
+                  endingLineNumber = "19"
+                  offsetFromSymbolStart = "24">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
