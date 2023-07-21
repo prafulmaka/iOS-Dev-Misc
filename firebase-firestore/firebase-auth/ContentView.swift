@@ -62,6 +62,7 @@ struct ContentView: View {
             }
         }
         
+        // Add to db
         model.addData(stringval: "test-value")
     }
 }
