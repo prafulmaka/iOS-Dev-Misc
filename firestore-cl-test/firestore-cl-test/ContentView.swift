@@ -3,10 +3,10 @@ import CoreLocation
 import Firebase
 
 class DBClass {
-    func addData(stringval: String) {
+    func addData(lat: Float, long: Float) {
         let db = Firestore.firestore()
         
-        db.collection("test").addDocument(data: ["val": stringval]) {error in
+        db.collection("locations").addDocument(data: ["latitude": lat, "longitude": long]) {error in
             if error == nil {
                 print("Success")
             }
@@ -30,7 +30,7 @@ struct ContentView: View {
                 Text("Your current location is: ")
                 Text("Latitude: \(locationDataManager.locationManager.location?.coordinate.latitude.description ?? "Error loading")")
                 Text("Longitude: \(locationDataManager.locationManager.location?.coordinate.longitude.description ?? "Error loading")")
-                let _ = DBClass().addData(stringval: "latitude: \(locationDataManager.locationManager.location?.coordinate.latitude.description ?? "Error loading")")
+                let _ = DBClass().addData(lat: Float(locationDataManager.locationManager.location?.coordinate.latitude.description ?? "0.00") ?? 0.00, long: Float(locationDataManager.locationManager.location?.coordinate.longitude.description ?? "0.00") ?? 0.00)
                 
             case .restricted, .denied:
                 Text("Current location was restricted or denied")
