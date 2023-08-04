@@ -6,7 +6,7 @@ class DBClass {
     func addData(lat: Float, long: Float) {
         let db = Firestore.firestore()
         
-        db.collection("locations").addDocument(data: ["latitude": lat, "longitude": long]) {error in
+        db.collection("locations").document("TEST").setData(["latitude": lat, "longitude": long]) {error in
             if error == nil {
                 print("Success")
             }
