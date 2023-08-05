@@ -1,6 +1,7 @@
 import SwiftUI
 import CoreLocation
 import Firebase
+import MapKit
 
 class DBClass {
     func addData(lat: Float, long: Float) {
@@ -20,6 +21,15 @@ class DBClass {
 
 struct ContentView: View {
     @StateObject var locationDataManager = LocationDataManager()
+    @State var region = MKCoordinateRegion(
+        center: CLLocationCoordinate2D(
+            latitude: 37.78, longitude: -122.416
+        ),
+        span: MKCoordinateSpan(
+            latitudeDelta: 0.5, longitudeDelta: 0.5
+        )
+    )
+    @State var tracking:MapUserTrackingMode = .follow
 
         
     var body: some View {
@@ -32,6 +42,11 @@ struct ContentView: View {
                 Text("Longitude: \(locationDataManager.locationManager.location?.coordinate.longitude.description ?? "Error loading")")
                 let _ = DBClass().addData(lat: Float(locationDataManager.locationManager.location?.coordinate.latitude.description ?? "0.00") ?? 0.00, long: Float(locationDataManager.locationManager.location?.coordinate.longitude.description ?? "0.00") ?? 0.00)
                 
+                Map(coordinateRegion: $region,
+                    interactionModes: MapInteractionModes.all,
+                    showsUserLocation: true,
+                    userTrackingMode: $tracking)
+                                                
             case .restricted, .denied:
                 Text("Current location was restricted or denied")
                 
@@ -43,9 +58,8 @@ struct ContentView: View {
                 ProgressView()
         
             }
-                        
+    
         }
-        .padding()
 
     }
     

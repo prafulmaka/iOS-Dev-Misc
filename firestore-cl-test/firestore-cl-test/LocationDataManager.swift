@@ -24,7 +24,7 @@ class LocationDataManager: NSObject, ObservableObject, CLLocationManagerDelegate
             
         case .authorizedWhenInUse:
             authorizationStatus = .authorizedWhenInUse
-            manager.requestLocation()
+            manager.startUpdatingLocation()
             break
             
         case .restricted:
@@ -46,7 +46,29 @@ class LocationDataManager: NSObject, ObservableObject, CLLocationManagerDelegate
     }
     
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-        print("Did Update Location")
+        switch manager.authorizationStatus {
+            
+        case .authorizedWhenInUse:
+            authorizationStatus = .authorizedWhenInUse
+            manager.startUpdatingLocation()
+            break
+            
+        case .restricted:
+            authorizationStatus = .restricted
+            break
+            
+        case .denied:
+            authorizationStatus = .denied
+            break
+            
+        case .notDetermined:
+            authorizationStatus = .notDetermined
+            manager.requestWhenInUseAuthorization()
+            break
+            
+        default:
+            break
+        }
     }
     
     func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
