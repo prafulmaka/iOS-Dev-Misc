@@ -31,7 +31,6 @@ struct ContentView: View {
             latitudeDelta: 0.5, longitudeDelta: 0.5
         )
     )
-
         
     var body: some View {
         VStack {
