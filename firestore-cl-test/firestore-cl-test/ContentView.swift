@@ -59,6 +59,10 @@ struct ContentView: View {
                 ProgressView()
         
             }
+            
+            Button(action: { AuthViewModel().signOut() }) {
+                Text("Sign Out")
+            }
     
         }
 

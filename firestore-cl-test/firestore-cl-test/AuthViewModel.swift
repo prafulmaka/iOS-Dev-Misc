@@ -22,10 +22,25 @@ class AuthViewModel: ObservableObject {
             if error != nil {
                 print(error?.localizedDescription ?? "")
             } else {
-                print("success")
-                self.userSession = result?.user
+                print("Success")
+                DispatchQueue.main.async {
+                    self.userSession = result?.user
+                }
+//                self.userSession = result?.user
             }
         }
-
+    }
+    
+    func signOut() {
+        do {
+            try Auth.auth().signOut()
+            DispatchQueue.main.async {
+                self.userSession = nil
+            }
+//            self.userSession = nil
+        }
+        catch {
+            print(error)
+        }
     }
 }

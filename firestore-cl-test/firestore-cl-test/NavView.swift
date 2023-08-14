@@ -8,12 +8,12 @@
 import SwiftUI
 
 struct NavView: View {
-    @EnvironmentObject var authDetails: AuthViewModel
+    @StateObject var authDetails = AuthViewModel()
     
     var body: some View {
         Group {
-            if AuthViewModel().userSession != nil {
-                TestView()
+            if authDetails.userSession != nil {
+                ContentView()
             } else {
                 LoginView()
             }
