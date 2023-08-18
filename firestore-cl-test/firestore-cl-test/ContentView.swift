@@ -4,10 +4,10 @@ import Firebase
 import MapKit
 
 class DBClass {
-    func addData(lat: Float, long: Float) {
+    func addData(userid: String, lat: Float, long: Float) {
         let db = Firestore.firestore()
         
-        db.collection("locations").document("TEST").setData(["latitude": lat, "longitude": long]) {error in
+        db.collection("locations").document("TEST").setData(["userid": userid, "latitude": lat, "longitude": long]) {error in
             if error == nil {
                 print("Success")
             }
@@ -40,7 +40,7 @@ struct ContentView: View {
                 Text("Your current location is: ")
                 Text("Latitude: \(locationDataManager.locationManager.location?.coordinate.latitude.description ?? "Error loading")")
                 Text("Longitude: \(locationDataManager.locationManager.location?.coordinate.longitude.description ?? "Error loading")")
-                let _ = DBClass().addData(lat: Float(locationDataManager.locationManager.location?.coordinate.latitude.description ?? "0.00") ?? 0.00,long: Float(locationDataManager.locationManager.location?.coordinate.longitude.description ?? "0.00") ?? 0.00)
+                let _ = DBClass().addData(userid: String(Auth.auth().currentUser!.uid), lat: Float(locationDataManager.locationManager.location?.coordinate.latitude.description ?? "0.00") ?? 0.00,long: Float(locationDataManager.locationManager.location?.coordinate.longitude.description ?? "0.00") ?? 0.00)
     
                 
                 Map(coordinateRegion: $region,
