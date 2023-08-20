@@ -33,14 +33,30 @@ class AuthViewModel: ObservableObject {
     
     func signOut() {
         do {
+            // Aug 18
+            deleteData(userid: String(Auth.auth().currentUser?.uid ?? "NIL"))
+            
             try Auth.auth().signOut()
             DispatchQueue.main.async {
                 self.userSession = nil
             }
-//            self.userSession = nil
+
         }
         catch {
             print(error)
+        }
+    }
+    // Aug 18
+    func deleteData(userid: String) {
+        let db = Firestore.firestore()
+        
+        db.collection("locations").document("mY8u0bJwZleDt24qfkf2sqq83ex1").delete() {error in
+            if error == nil {
+                print("Success")
+            }
+            else {
+                print("Failure")
+            }
         }
     }
 }
