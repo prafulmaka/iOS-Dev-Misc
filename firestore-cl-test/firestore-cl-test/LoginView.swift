@@ -11,8 +11,8 @@ import FirebaseAuth
 
 struct LoginView: View {
 
-    @State var email: String = ""
-    @State var password: String = ""
+    @State private var email: String = ""
+    @State private var password: String = ""
     @State private var userIsLoggedIn = false
     
     @EnvironmentObject var testVal: AuthViewModel
@@ -69,12 +69,6 @@ struct LoginView: View {
                     
                 Text("\(userIsLoggedIn.description)")
     
-                
-//                NavigationLink(destination: ContentView()) {
-//                    Button(action: { AuthViewModel().login(email: email, password: password) }) {
-//                        Text("Sign In")
-//                    }
-//                }
             }
         }
     }

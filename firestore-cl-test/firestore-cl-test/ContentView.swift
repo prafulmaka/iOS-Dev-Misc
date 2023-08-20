@@ -7,7 +7,7 @@ class DBClass {
     func addData(userid: String, lat: Float, long: Float) {
         let db = Firestore.firestore()
         
-        db.collection("locations").document("TEST").setData(["userid": userid, "latitude": lat, "longitude": long]) {error in
+        db.collection("locations").document(userid).setData(["userid": userid, "latitude": lat, "longitude": long]) {error in
             if error == nil {
                 print("Success")
             }
@@ -31,8 +31,22 @@ struct ContentView: View {
             latitudeDelta: 0.5, longitudeDelta: 0.5
         )
     )
-        
+    
+    // Signout state
+    @State var signout = false
+    
+    // If signout is true - go back to LoginView
+    // If signout is false - use mainmap view
     var body: some View {
+        if signout == true {
+            LoginView().login
+        } else {
+            mainmap
+        }
+    }
+        
+    var mainmap: some View {
+        
         VStack {
             switch locationDataManager.locationManager.authorizationStatus {
                 
@@ -40,9 +54,12 @@ struct ContentView: View {
                 Text("Your current location is: ")
                 Text("Latitude: \(locationDataManager.locationManager.location?.coordinate.latitude.description ?? "Error loading")")
                 Text("Longitude: \(locationDataManager.locationManager.location?.coordinate.longitude.description ?? "Error loading")")
-                let _ = DBClass().addData(userid: String(Auth.auth().currentUser!.uid), lat: Float(locationDataManager.locationManager.location?.coordinate.latitude.description ?? "0.00") ?? 0.00,long: Float(locationDataManager.locationManager.location?.coordinate.longitude.description ?? "0.00") ?? 0.00)
-    
                 
+                // Aug 19
+                Text(signout.description)
+                
+                let _ = DBClass().addData(userid: String(Auth.auth().currentUser?.uid ?? "NIL"), lat: Float(locationDataManager.locationManager.location?.coordinate.latitude.description ?? "0.00") ?? 0.00,long: Float(locationDataManager.locationManager.location?.coordinate.longitude.description ?? "0.00") ?? 0.00)
+    
                 Map(coordinateRegion: $region,
                     interactionModes: MapInteractionModes.all,
                     showsUserLocation: true,
@@ -60,9 +77,24 @@ struct ContentView: View {
         
             }
             
-            Button(action: { AuthViewModel().signOut() }) {
+            Button(action: {
+                // Sign out
+                AuthViewModel().signOut()   
+
+                // Stop updating location
+                // Toggle signout
+                locationDataManager.locationManager.stopUpdatingLocation() }) {
                 Text("Sign Out")
+                        .onAppear {
+                            Auth.auth().addStateDidChangeListener { auth, user in
+                                if user == nil {
+                                    signout.toggle()
+                                }
+                                
+                            }
+                        }
             }
+            
     
         }
 
