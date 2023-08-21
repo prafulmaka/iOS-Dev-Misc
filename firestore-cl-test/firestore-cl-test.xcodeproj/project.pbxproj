@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8B37DAB22A920E04004152E5 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B37DAB12A920E04004152E5 /* LoginViewModel.swift */; };
 		8B9AA4A12A88CABE005B0864 /* NavView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B9AA4A02A88CABE005B0864 /* NavView.swift */; };
 		8B9AA4A32A88CB90005B0864 /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B9AA4A22A88CB90005B0864 /* AuthViewModel.swift */; };
 		8BA855652A79E1C400E295D7 /* firestore_cl_testApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA855642A79E1C400E295D7 /* firestore_cl_testApp.swift */; };
@@ -28,6 +29,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8B37DAB12A920E04004152E5 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		8B9AA4A02A88CABE005B0864 /* NavView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavView.swift; sourceTree = "<group>"; };
 		8B9AA4A22A88CB90005B0864 /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
 		8BA855612A79E1C400E295D7 /* firestore-cl-test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "firestore-cl-test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -89,6 +91,7 @@
 				8B9AA4A22A88CB90005B0864 /* AuthViewModel.swift */,
 				8BAE497F2A7F9D060032628E /* LoginView.swift */,
 				8B9AA4A02A88CABE005B0864 /* NavView.swift */,
+				8B37DAB12A920E04004152E5 /* LoginViewModel.swift */,
 			);
 			path = "firestore-cl-test";
 			sourceTree = "<group>";
@@ -189,6 +192,7 @@
 				8BA855862A79F31400E295D7 /* LocationDataManager.swift in Sources */,
 				8BA855882A79F51E00E295D7 /* ViewModel.swift in Sources */,
 				8B9AA4A32A88CB90005B0864 /* AuthViewModel.swift in Sources */,
+				8B37DAB22A920E04004152E5 /* LoginViewModel.swift in Sources */,
 				8BAE49802A7F9D060032628E /* LoginView.swift in Sources */,
 				8BA855652A79E1C400E295D7 /* firestore_cl_testApp.swift in Sources */,
 				8B9AA4A12A88CABE005B0864 /* NavView.swift in Sources */,

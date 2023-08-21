@@ -26,14 +26,12 @@ class AuthViewModel: ObservableObject {
                 DispatchQueue.main.async {
                     self.userSession = result?.user
                 }
-//                self.userSession = result?.user
             }
         }
     }
     
     func signOut() {
         do {
-            // Aug 18
             deleteData(userid: String(Auth.auth().currentUser?.uid ?? "NIL"))
             
             try Auth.auth().signOut()
@@ -46,7 +44,7 @@ class AuthViewModel: ObservableObject {
             print(error)
         }
     }
-    // Aug 18
+    
     func deleteData(userid: String) {
         let db = Firestore.firestore()
         

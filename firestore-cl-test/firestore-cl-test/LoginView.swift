@@ -11,9 +11,10 @@ import FirebaseAuth
 
 struct LoginView: View {
 
-    @State private var email: String = ""
-    @State private var password: String = ""
+//    @State var email: String = ""
+//    @State var password: String = ""
     @State private var userIsLoggedIn = false
+    @ObservedObject var vm = LoginViewModel()
     
     @EnvironmentObject var testVal: AuthViewModel
     
@@ -35,7 +36,7 @@ struct LoginView: View {
                 Text("Work in Progress").padding(.bottom, 100)
 
                 TextField("Username",
-                          text: $email,
+                          text: $vm.username,
                           prompt: Text("Username"))
                 .padding(10)
                 .overlay {
@@ -45,7 +46,7 @@ struct LoginView: View {
                 .padding(.horizontal)
 
                 SecureField("Password",
-                          text: $password,
+                          text: $vm.password,
                           prompt: Text("Password"))
                 .padding(10)
                 .overlay {
@@ -55,7 +56,7 @@ struct LoginView: View {
                 .padding(.horizontal)
                 
                 Button {
-                    AuthViewModel().login(email: email, password: password)
+                    AuthViewModel().login(email: vm.username, password: vm.password)
                 } label: {
                     Text("Sign In")
                 }
