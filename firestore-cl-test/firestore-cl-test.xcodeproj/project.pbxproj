@@ -24,7 +24,6 @@
 		8BA855822A79E28100E295D7 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 8BA855812A79E28100E295D7 /* FirebaseStorage */; };
 		8BA855842A79E32600E295D7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8BA855832A79E32600E295D7 /* GoogleService-Info.plist */; };
 		8BA855862A79F31400E295D7 /* LocationDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA855852A79F31400E295D7 /* LocationDataManager.swift */; };
-		8BA855882A79F51E00E295D7 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA855872A79F51E00E295D7 /* ViewModel.swift */; };
 		8BAE49802A7F9D060032628E /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BAE497F2A7F9D060032628E /* LoginView.swift */; };
 /* End PBXBuildFile section */
 
@@ -39,7 +38,6 @@
 		8BA8556B2A79E1C500E295D7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		8BA855832A79E32600E295D7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../firebase-firestore/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		8BA855852A79F31400E295D7 /* LocationDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationDataManager.swift; sourceTree = "<group>"; };
-		8BA855872A79F51E00E295D7 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		8BAE497F2A7F9D060032628E /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -87,7 +85,6 @@
 				8BA855682A79E1C500E295D7 /* Assets.xcassets */,
 				8BA8556A2A79E1C500E295D7 /* Preview Content */,
 				8BA855852A79F31400E295D7 /* LocationDataManager.swift */,
-				8BA855872A79F51E00E295D7 /* ViewModel.swift */,
 				8B9AA4A22A88CB90005B0864 /* AuthViewModel.swift */,
 				8BAE497F2A7F9D060032628E /* LoginView.swift */,
 				8B9AA4A02A88CABE005B0864 /* NavView.swift */,
@@ -190,7 +187,6 @@
 			files = (
 				8BA855672A79E1C400E295D7 /* ContentView.swift in Sources */,
 				8BA855862A79F31400E295D7 /* LocationDataManager.swift in Sources */,
-				8BA855882A79F51E00E295D7 /* ViewModel.swift in Sources */,
 				8B9AA4A32A88CB90005B0864 /* AuthViewModel.swift in Sources */,
 				8B37DAB22A920E04004152E5 /* LoginViewModel.swift in Sources */,
 				8BAE49802A7F9D060032628E /* LoginView.swift in Sources */,

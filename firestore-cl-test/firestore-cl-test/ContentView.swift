@@ -39,7 +39,7 @@ struct ContentView: View {
     // If signout is false - use mainmap view
     var body: some View {
         if signout == true {
-            LoginView().login
+            LoginView()
         } else {
             mainmap
         }
@@ -85,14 +85,14 @@ struct ContentView: View {
                 // Toggle signout
                 locationDataManager.locationManager.stopUpdatingLocation() }) {
                 Text("Sign Out")
-                        .onAppear {
-                            Auth.auth().addStateDidChangeListener { auth, user in
-                                if user == nil {
-                                    signout.toggle()
-                                }
-                                
+                    .onAppear {
+                        Auth.auth().addStateDidChangeListener { auth, user in
+                            if user == nil {
+                                signout.toggle()
                             }
+
                         }
+                    }
             }
             
     
