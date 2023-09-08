@@ -65,7 +65,7 @@ class AuthViewModel: ObservableObject {
         url.setValue("application/json", forHTTPHeaderField: "Accept")
         url.httpMethod = "POST"
         
-        url.allHTTPHeaderFields = ["Authorization": "Bearer dapia965d0695825689f0f4b4a004fe94dc7-3"]
+        url.allHTTPHeaderFields = ["Authorization": "Bearer"]
         
         let json: [String: Any] = ["job_id": 1112480374427870, "notebook_params": ["userid": "mY8u0bJwZleDt24qfkf2sqq83ex1"]]
         
