@@ -7,12 +7,13 @@ class DBClass {
     func addData(userid: String, lat: Float, long: Float) {
         let db = Firestore.firestore()
         
-        db.collection("locations").document(userid).setData(["userid": userid, "latitude": lat, "longitude": long]) {error in
+        db.collection("locations").document(userid).updateData(["userid": userid, "latitude": lat, "longitude": long]) {error in
             if error == nil {
                 print("Success")
             }
             else {
-                print("Failure")
+                print("Failed to update. New document to be added.")
+                db.collection("locations").document(userid).setData(["userid": userid, "latitude": lat, "longitude": long])
             }
         }
     }
@@ -54,9 +55,7 @@ struct ContentView: View {
                 Text("Your current location is: ")
                 Text("Latitude: \(locationDataManager.locationManager.location?.coordinate.latitude.description ?? "Error loading")")
                 Text("Longitude: \(locationDataManager.locationManager.location?.coordinate.longitude.description ?? "Error loading")")
-                
-                // Aug 19
-                Text(signout.description)
+
                 
                 let _ = DBClass().addData(userid: String(Auth.auth().currentUser?.uid ?? "NIL"), lat: Float(locationDataManager.locationManager.location?.coordinate.latitude.description ?? "0.00") ?? 0.00,long: Float(locationDataManager.locationManager.location?.coordinate.longitude.description ?? "0.00") ?? 0.00)
     
@@ -79,7 +78,7 @@ struct ContentView: View {
             
             Button(action: {
                 // Sign out
-                AuthViewModel().signOut()   
+                AuthViewModel().signOut()
 
                 // Stop updating location
                 // Toggle signout
@@ -93,6 +92,12 @@ struct ContentView: View {
 
                         }
                     }
+            }
+            
+            Button(action: {
+                AuthViewModel().fetchFromAPI()
+            }) {
+                Text("Execute API")
             }
             
     
