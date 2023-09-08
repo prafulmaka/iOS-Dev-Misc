@@ -11,8 +11,6 @@ import FirebaseAuth
 
 struct LoginView: View {
 
-//    @State var email: String = ""
-//    @State var password: String = ""
     @State private var userIsLoggedIn = false
     @ObservedObject var vm = LoginViewModel()
     
@@ -67,8 +65,6 @@ struct LoginView: View {
                         }
                     }
                 }
-                    
-                Text("\(userIsLoggedIn.description)")
     
             }
         }
