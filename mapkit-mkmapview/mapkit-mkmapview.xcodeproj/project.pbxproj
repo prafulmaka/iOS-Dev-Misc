@@ -7,26 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8B186F552A8F557300FE5E9A /* api_testApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B186F542A8F557300FE5E9A /* api_testApp.swift */; };
-		8B186F572A8F557300FE5E9A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B186F562A8F557300FE5E9A /* ContentView.swift */; };
-		8B186F592A8F557300FE5E9A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B186F582A8F557300FE5E9A /* Assets.xcassets */; };
-		8B186F5C2A8F557300FE5E9A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B186F5B2A8F557300FE5E9A /* Preview Assets.xcassets */; };
-		8B186F632A8F55AD00FE5E9A /* ResponseStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B186F622A8F55AD00FE5E9A /* ResponseStruct.swift */; };
-		8B186F652A8F561300FE5E9A /* APICall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B186F642A8F561300FE5E9A /* APICall.swift */; };
+		8BC0252D2AAC4BDA007FE603 /* mapkit_mkmapviewApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BC0252C2AAC4BDA007FE603 /* mapkit_mkmapviewApp.swift */; };
+		8BC0252F2AAC4BDA007FE603 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BC0252E2AAC4BDA007FE603 /* ContentView.swift */; };
+		8BC025312AAC4BDB007FE603 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8BC025302AAC4BDB007FE603 /* Assets.xcassets */; };
+		8BC025342AAC4BDB007FE603 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8BC025332AAC4BDB007FE603 /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		8B186F512A8F557300FE5E9A /* api-test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "api-test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		8B186F542A8F557300FE5E9A /* api_testApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = api_testApp.swift; sourceTree = "<group>"; };
-		8B186F562A8F557300FE5E9A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		8B186F582A8F557300FE5E9A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		8B186F5B2A8F557300FE5E9A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		8B186F622A8F55AD00FE5E9A /* ResponseStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseStruct.swift; sourceTree = "<group>"; };
-		8B186F642A8F561300FE5E9A /* APICall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APICall.swift; sourceTree = "<group>"; };
+		8BC025292AAC4BDA007FE603 /* mapkit-mkmapview.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "mapkit-mkmapview.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8BC0252C2AAC4BDA007FE603 /* mapkit_mkmapviewApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mapkit_mkmapviewApp.swift; sourceTree = "<group>"; };
+		8BC0252E2AAC4BDA007FE603 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		8BC025302AAC4BDB007FE603 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8BC025332AAC4BDB007FE603 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		8B186F4E2A8F557300FE5E9A /* Frameworks */ = {
+		8BC025262AAC4BDA007FE603 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -36,39 +32,37 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		8B186F482A8F557300FE5E9A = {
+		8BC025202AAC4BDA007FE603 = {
 			isa = PBXGroup;
 			children = (
-				8B186F532A8F557300FE5E9A /* api-test */,
-				8B186F522A8F557300FE5E9A /* Products */,
+				8BC0252B2AAC4BDA007FE603 /* mapkit-mkmapview */,
+				8BC0252A2AAC4BDA007FE603 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		8B186F522A8F557300FE5E9A /* Products */ = {
+		8BC0252A2AAC4BDA007FE603 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				8B186F512A8F557300FE5E9A /* api-test.app */,
+				8BC025292AAC4BDA007FE603 /* mapkit-mkmapview.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		8B186F532A8F557300FE5E9A /* api-test */ = {
+		8BC0252B2AAC4BDA007FE603 /* mapkit-mkmapview */ = {
 			isa = PBXGroup;
 			children = (
-				8B186F542A8F557300FE5E9A /* api_testApp.swift */,
-				8B186F642A8F561300FE5E9A /* APICall.swift */,
-				8B186F622A8F55AD00FE5E9A /* ResponseStruct.swift */,
-				8B186F562A8F557300FE5E9A /* ContentView.swift */,
-				8B186F582A8F557300FE5E9A /* Assets.xcassets */,
-				8B186F5A2A8F557300FE5E9A /* Preview Content */,
+				8BC0252C2AAC4BDA007FE603 /* mapkit_mkmapviewApp.swift */,
+				8BC0252E2AAC4BDA007FE603 /* ContentView.swift */,
+				8BC025302AAC4BDB007FE603 /* Assets.xcassets */,
+				8BC025322AAC4BDB007FE603 /* Preview Content */,
 			);
-			path = "api-test";
+			path = "mapkit-mkmapview";
 			sourceTree = "<group>";
 		};
-		8B186F5A2A8F557300FE5E9A /* Preview Content */ = {
+		8BC025322AAC4BDB007FE603 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				8B186F5B2A8F557300FE5E9A /* Preview Assets.xcassets */,
+				8BC025332AAC4BDB007FE603 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
@@ -76,39 +70,39 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		8B186F502A8F557300FE5E9A /* api-test */ = {
+		8BC025282AAC4BDA007FE603 /* mapkit-mkmapview */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8B186F5F2A8F557300FE5E9A /* Build configuration list for PBXNativeTarget "api-test" */;
+			buildConfigurationList = 8BC025372AAC4BDB007FE603 /* Build configuration list for PBXNativeTarget "mapkit-mkmapview" */;
 			buildPhases = (
-				8B186F4D2A8F557300FE5E9A /* Sources */,
-				8B186F4E2A8F557300FE5E9A /* Frameworks */,
-				8B186F4F2A8F557300FE5E9A /* Resources */,
+				8BC025252AAC4BDA007FE603 /* Sources */,
+				8BC025262AAC4BDA007FE603 /* Frameworks */,
+				8BC025272AAC4BDA007FE603 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "api-test";
-			productName = "api-test";
-			productReference = 8B186F512A8F557300FE5E9A /* api-test.app */;
+			name = "mapkit-mkmapview";
+			productName = "mapkit-mkmapview";
+			productReference = 8BC025292AAC4BDA007FE603 /* mapkit-mkmapview.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		8B186F492A8F557300FE5E9A /* Project object */ = {
+		8BC025212AAC4BDA007FE603 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1430;
 				LastUpgradeCheck = 1430;
 				TargetAttributes = {
-					8B186F502A8F557300FE5E9A = {
+					8BC025282AAC4BDA007FE603 = {
 						CreatedOnToolsVersion = 14.3.1;
 					};
 				};
 			};
-			buildConfigurationList = 8B186F4C2A8F557300FE5E9A /* Build configuration list for PBXProject "api-test" */;
+			buildConfigurationList = 8BC025242AAC4BDA007FE603 /* Build configuration list for PBXProject "mapkit-mkmapview" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -116,44 +110,42 @@
 				en,
 				Base,
 			);
-			mainGroup = 8B186F482A8F557300FE5E9A;
-			productRefGroup = 8B186F522A8F557300FE5E9A /* Products */;
+			mainGroup = 8BC025202AAC4BDA007FE603;
+			productRefGroup = 8BC0252A2AAC4BDA007FE603 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				8B186F502A8F557300FE5E9A /* api-test */,
+				8BC025282AAC4BDA007FE603 /* mapkit-mkmapview */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		8B186F4F2A8F557300FE5E9A /* Resources */ = {
+		8BC025272AAC4BDA007FE603 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8B186F5C2A8F557300FE5E9A /* Preview Assets.xcassets in Resources */,
-				8B186F592A8F557300FE5E9A /* Assets.xcassets in Resources */,
+				8BC025342AAC4BDB007FE603 /* Preview Assets.xcassets in Resources */,
+				8BC025312AAC4BDB007FE603 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		8B186F4D2A8F557300FE5E9A /* Sources */ = {
+		8BC025252AAC4BDA007FE603 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8B186F572A8F557300FE5E9A /* ContentView.swift in Sources */,
-				8B186F552A8F557300FE5E9A /* api_testApp.swift in Sources */,
-				8B186F652A8F561300FE5E9A /* APICall.swift in Sources */,
-				8B186F632A8F55AD00FE5E9A /* ResponseStruct.swift in Sources */,
+				8BC0252F2AAC4BDA007FE603 /* ContentView.swift in Sources */,
+				8BC0252D2AAC4BDA007FE603 /* mapkit_mkmapviewApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		8B186F5D2A8F557300FE5E9A /* Debug */ = {
+		8BC025352AAC4BDB007FE603 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -213,7 +205,7 @@
 			};
 			name = Debug;
 		};
-		8B186F5E2A8F557300FE5E9A /* Release */ = {
+		8BC025362AAC4BDB007FE603 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -267,16 +259,18 @@
 			};
 			name = Release;
 		};
-		8B186F602A8F557300FE5E9A /* Debug */ = {
+		8BC025382AAC4BDB007FE603 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"api-test/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"mapkit-mkmapview/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "This app uses your data for a better experience";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "This app uses your data for a better experience";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -287,7 +281,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.projects.api-test";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.projects.mapkit-mkmapview";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -295,16 +289,18 @@
 			};
 			name = Debug;
 		};
-		8B186F612A8F557300FE5E9A /* Release */ = {
+		8BC025392AAC4BDB007FE603 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"api-test/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"mapkit-mkmapview/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "This app uses your data for a better experience";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "This app uses your data for a better experience";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -315,7 +311,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.projects.api-test";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.projects.mapkit-mkmapview";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -326,25 +322,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		8B186F4C2A8F557300FE5E9A /* Build configuration list for PBXProject "api-test" */ = {
+		8BC025242AAC4BDA007FE603 /* Build configuration list for PBXProject "mapkit-mkmapview" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				8B186F5D2A8F557300FE5E9A /* Debug */,
-				8B186F5E2A8F557300FE5E9A /* Release */,
+				8BC025352AAC4BDB007FE603 /* Debug */,
+				8BC025362AAC4BDB007FE603 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8B186F5F2A8F557300FE5E9A /* Build configuration list for PBXNativeTarget "api-test" */ = {
+		8BC025372AAC4BDB007FE603 /* Build configuration list for PBXNativeTarget "mapkit-mkmapview" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				8B186F602A8F557300FE5E9A /* Debug */,
-				8B186F612A8F557300FE5E9A /* Release */,
+				8BC025382AAC4BDB007FE603 /* Debug */,
+				8BC025392AAC4BDB007FE603 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 8B186F492A8F557300FE5E9A /* Project object */;
+	rootObject = 8BC025212AAC4BDA007FE603 /* Project object */;
 }
