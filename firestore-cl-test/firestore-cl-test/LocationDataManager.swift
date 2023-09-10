@@ -24,6 +24,7 @@ class LocationDataManager: NSObject, ObservableObject, CLLocationManagerDelegate
             
         case .authorizedWhenInUse:
             authorizationStatus = .authorizedWhenInUse
+            manager.desiredAccuracy = kCLLocationAccuracyBest
             manager.startUpdatingLocation()
             break
             

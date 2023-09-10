@@ -1,14 +1,14 @@
 //
-//  api_testApp.swift
-//  api-test
+//  mapkit_mkmapviewApp.swift
+//  mapkit-mkmapview
 //
-//  Created by Praful Maka on 8/18/23.
+//  Created by Praful Maka on 9/8/23.
 //
 
 import SwiftUI
 
 @main
-struct api_testApp: App {
+struct mapkit_mkmapviewApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
