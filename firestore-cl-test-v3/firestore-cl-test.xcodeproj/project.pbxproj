@@ -24,9 +24,9 @@
 		8BA8557E2A79E28100E295D7 /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = 8BA8557D2A79E28100E295D7 /* FirebaseMessaging */; };
 		8BA855802A79E28100E295D7 /* FirebasePerformance in Frameworks */ = {isa = PBXBuildFile; productRef = 8BA8557F2A79E28100E295D7 /* FirebasePerformance */; };
 		8BA855822A79E28100E295D7 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 8BA855812A79E28100E295D7 /* FirebaseStorage */; };
-		8BA855842A79E32600E295D7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8BA855832A79E32600E295D7 /* GoogleService-Info.plist */; };
 		8BA855862A79F31400E295D7 /* LocationDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA855852A79F31400E295D7 /* LocationDataManager.swift */; };
 		8BAE49802A7F9D060032628E /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BAE497F2A7F9D060032628E /* LoginView.swift */; };
+		8BBA516E2AFF358A004227D0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8BBA516D2AFF358A004227D0 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,9 +39,9 @@
 		8BA855662A79E1C400E295D7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		8BA855682A79E1C500E295D7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8BA8556B2A79E1C500E295D7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		8BA855832A79E32600E295D7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../firebase-firestore/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		8BA855852A79F31400E295D7 /* LocationDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationDataManager.swift; sourceTree = "<group>"; };
 		8BAE497F2A7F9D060032628E /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		8BBA516D2AFF358A004227D0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,12 +92,12 @@
 			isa = PBXGroup;
 			children = (
 				8BA855642A79E1C400E295D7 /* firestore_cl_testApp.swift */,
-				8BA855832A79E32600E295D7 /* GoogleService-Info.plist */,
 				8BA855662A79E1C400E295D7 /* ContentView.swift */,
 				8BA855682A79E1C500E295D7 /* Assets.xcassets */,
 				8BA8556A2A79E1C500E295D7 /* Preview Content */,
 				8BA855852A79F31400E295D7 /* LocationDataManager.swift */,
 				8B9AA4A22A88CB90005B0864 /* AuthViewModel.swift */,
+				8BBA516D2AFF358A004227D0 /* GoogleService-Info.plist */,
 				8BAE497F2A7F9D060032628E /* LoginView.swift */,
 				8B9AA4A02A88CABE005B0864 /* NavView.swift */,
 				8B37DAB12A920E04004152E5 /* LoginViewModel.swift */,
@@ -188,7 +188,7 @@
 			files = (
 				8BA8556C2A79E1C500E295D7 /* Preview Assets.xcassets in Resources */,
 				8BA855692A79E1C500E295D7 /* Assets.xcassets in Resources */,
-				8BA855842A79E32600E295D7 /* GoogleService-Info.plist in Resources */,
+				8BBA516E2AFF358A004227D0 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
