@@ -1,0 +1,17 @@
+//
+//  animation_testApp.swift
+//  animation-test
+//
+//  Created by Praful Maka on 12/27/23.
+//
+
+import SwiftUI
+
+@main
+struct animation_testApp: App {
+    var body: some Scene {
+        WindowGroup {
+            ContentView()
+        }
+    }
+}
